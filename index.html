@@ -6,54 +6,42 @@
     <link href="./dist/output.css" rel="stylesheet" />
     <title>Amirhossein Payab</title>
   </head>
-  <body class="overflow-hidden">
-    <main
-      class="h-screen w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth"
-    >
-      <!--Hero-->
-      <section
-        class="h-screen w-full snap-start flex justify-center items-center text-black"
-      >
-        <div class="h-full basis-1/2 bg-black flex justify-center items-end">
-          <img src="./src/hero.png" alt="" class="w-1/2" />
-        </div>
+  <body>
+    <header class="flex flex-col bg-black h-screen text-white overflow-hidden">
+      <div class="w-full flex justify-center items-center p-6 lg:p-8 z-10">
+        <span class="font-art text-3xl lg:text-5xl">AP</span>
+      </div>
 
-        <div
-          class="h-full flex flex-col justify-end items-start p-20 basis-1/2 bg-slate-50"
+      <section
+        class="flex-1 flex flex-col justify-center items-center gap-6 px-4 text-center"
+      >
+        <img src="./src/hero.png" alt="" class="w-52 rounded-full" />
+
+        <h1 class="text-3xl lg:text-4xl font-bold tracking-tight">
+          Hi, I'm Amirhossein Payab
+        </h1>
+        <h2 class="text-sm tracking-tight">
+          Interested in software engineering
+        </h2>
+        <button
+          class="mt-2 border border-white text-white px-4 py-2 hover:bg-white hover:text-black transition-all duration-300 text-sm uppercase tracking-wider"
         >
-          <h1 class="text-[60px] font-art">Amirhossein Payab</h1>
-          <h2 class="text-[20px]">Passionate Software Developer</h2>
-          <p class="text-[20px]">
-            Building ideas into reality, one line of code at a time.
-          </p>
-        </div>
+          <a href="#about">More About Me</a>
+        </button>
       </section>
-      <!-- About me-->
-      <section
-        class="relative h-screen w-1/2 snap-start bg-black flex flex-col justify-center items-center text-white"
-      >
-        <h1 class="text-8xl p-9 font-art">About me</h1>
-        <p class="font-sans px-6">
-          Final-year Computer Science student who loves creating software. I
-          started my programming journey at university with C and Python, and
-          now I’m working my way toward becoming a software engineer. I enjoy
-          coding with good music in the background, working in teams, exploring
-          new places, and expressing myself through music and art. These
-          passions keep me creative and motivated as I tackle new challenges.
-        </p>
-      </section>
-      <!--Skills-->
-      <section
-        class="h-screen w-full snap-start bg-black flex justify-center items-center text-white"
-      >
-        <h1 class="text-6xl font-bold">Skills</h1>
-      </section>
-      <!--Contant me-->
-      <section
-        class="h-screen w-full snap-start bg-black flex justify-center items-center text-white"
-      >
-        <h1 class="text-6xl font-bold">contact me</h1>
-      </section>
-    </main>
+    </header>
+
+    <section id="about" class="flex flex-col justify-center items-center">
+      <h1 class="font-art text-3xl lg:text-5xl p-4">About me</h1>
+      <p class="px-52">
+        I’m a Software Engineer in the making, specializing in JavaScript and
+        Modern Web Development. With a background starting in C and Python, I
+        value structured code and efficient solutions. But what truly drives me
+        is the creative side of tech. Fuelled by good music and a passion for
+        art, I strive to build software that feels as good as it works. I’m
+        currently looking for new challenges and a great team to build the
+        future with.
+      </p>
+    </section>
   </body>
 </html>
